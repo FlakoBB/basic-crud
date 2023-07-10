@@ -1,6 +1,9 @@
-const form1 = document.getElementById('form1')
+import { insertNewArtist } from './mysql/inserts.js'
 
-form1.addEventListener('submit', event => {
+const artistForm = document.getElementById('artistForm')
+
+artistForm.addEventListener('submit', event => {
   event.preventDefault()
-  console.log('npombre')
+  const newArtist = document.getElementById('artistName')
+  console.log(newArtist.value)
 })
